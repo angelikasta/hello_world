@@ -1,0 +1,35 @@
+<html>
+    <title>Registration page </title>
+
+    <body>
+        <form id = "userDetails" onsubmit = "return false">
+            First Name: <input type="text" id="firstNameInput"><br>
+            Last Name: <input type="text" id="lastNameInput"><br>
+            Email: <input type="email" id="emailInput"><br>
+            Password: <input type="password" id="passwordInput"><br>
+            <input type="submit" onclick="storeUser()">
+        </form>
+
+
+        <!-- Result of registration displayed here -->
+        <p id="result"></p>
+        <script>
+            function storeUser() {
+
+                var userObject = {};
+
+                userObject.firstName = document.getElementById("firstNameInput").value;
+                userObject.lastName = document.getElementById("lastNameInput").value;
+                userObject.email = document.getElementById("emailInput").value;
+                userObject.password = document.getElementById("passwordInput").value;
+
+                //store the user
+                localStorage[userObject.email] = JSON.stringify(userObject);
+
+                //inform user of result
+                document.getElementById("result").innerHTML = "<b>Registration successful.</b>";
+
+            }
+        </script>
+    </body>
+</html>

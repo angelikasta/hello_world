@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet1.css" />	
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <title> How did the chicken cross the road? </title>
+    </head>
+    <body>
+
+        <header>
+
+
+            <div id="header">  
+                <div id="overlap">
+                    <img src="writing.png"/>
+                </div>
+                <div id="logoimg">
+                    <img src="smallchicken2.png">
+                </div>
+
+            </div>
+        </header>
+        <nav>
+            <div id="nav">
+
+                <ul>
+                    <div id="ul">
+                        <li><a href="index.html"><span>HOME</span></a></li>
+                        <li><a href="play.html"><span>PLAY</span></a></li>
+                        <li><a href="scoreboard.html"><span>SCOREBOARD</span></a></li>             
+                        <li><a href="register.html"><span>REGISTER</span></a></li>
+                        <li><a href="login.html"><span>LOGIN</span></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div id="section">
+            <div id = "displayScore">
+                <script>
+                    //trying to display score and keep it, doesnt work
+                    document.getElementById("displayScore").innerHTML = "user " +
+                            sessionStorage.loggedInFirstName +
+                            " signed in, final score " + localStorage.topScore;
+
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer">
+
+            <br>
+            <br>
+
+            Created by Angelika Stachura, 2016.
+
+
+
+        </div>
+    </footer>
+
+</body>
+</html>

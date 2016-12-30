@@ -1,0 +1,19 @@
+
+
+/*GAME CSS*/
+#gameDiv {
+	width: 800px;
+	height:600px;
+	margin:0px auto;
+	padding: 0;
+	border-color:#000;
+	border-width: 2px 2px 2px 2px;
+	border-style: solid;
+}
+
+#gameCanvas {
+	padding: 0;
+	-webkit-tap-highlight-color: transparent ;
+}
+
+
